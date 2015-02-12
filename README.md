@@ -1,24 +1,24 @@
-# Godmin Tagger
+# Godmin Tags
 
-[![Gem Version](http://img.shields.io/gem/v/godmin-tagger.svg)](https://rubygems.org/gems/godmin-tagger)
+[![Gem Version](http://img.shields.io/gem/v/godmin-tags.svg)](https://rubygems.org/gems/godmin-tags)
 
-Godmin Tagger is a tagger component for [Godmin](https://github.com/varvet/godmin) that adds an `f.tags_field` to forms.
+Godmin Tags is a tags component for [Godmin](https://github.com/varvet/godmin) that adds an `f.tags_field` to forms.
 
 ## Installation
 
 Add the gem to the application's `Gemfile`:
 ```ruby
-gem "godmin-tagger"
+gem "godmin-tags"
 ```
 
 Or to the admin engine's `gemspec`:
 ```ruby
-s.add_dependency "godmin-tagger", "~> x.x.x"
+s.add_dependency "godmin-tags", "~> x.x.x"
 ```
 
 ## Usage
 
-Use the tagger in your form like so:
+Use the tags field in your form like so:
 
 ```erb
 <%= form_for(@resource) do |f| %>

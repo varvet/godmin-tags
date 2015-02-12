@@ -1,5 +1,5 @@
 module Godmin
-  module Tagger
+  module Tags
     class Engine < ::Rails::Engine
     end
   end

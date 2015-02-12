@@ -1,5 +1,5 @@
 module Godmin
-  module Tagger
+  module Tags
     module Helper
       def tags_field(attribute, options = {})
         text_field(attribute, options.deep_merge(data: { behavior: "tagger" }))
@@ -7,5 +7,5 @@ module Godmin
     end
   end
 
-  FormBuilders::FormBuilder.send(:include, Tagger::Helper)
+  FormBuilders::FormBuilder.send(:include, Tags::Helper)
 end

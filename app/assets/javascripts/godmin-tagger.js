@@ -1,6 +1,6 @@
 window.Godmin = window.Godmin || {};
 
-Godmin.Tagger = (function() {
+Godmin.Tags = (function() {
   function initialize() {
     initializeState();
   }
@@ -35,5 +35,5 @@ Godmin.Tagger = (function() {
 })();
 
 $(function() {
-  Godmin.Tagger.initialize();
+  Godmin.Tags.initialize();
 });

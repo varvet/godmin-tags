@@ -10,7 +10,7 @@ Godmin.Tags = (function() {
   }
 
   function initializeTagger($el, options) {
-    options = {
+    var defaults = {
       delimiter: ', ',
       create: true,
       valueField: 'name',
@@ -25,7 +25,7 @@ Godmin.Tags = (function() {
         );
       }
     };
-    Godmin.SelectBoxes.initializeSelectBox($el, options);
+    Godmin.SelectBoxes.initializeSelectBox($el, $.extend(defaults, options));
   }
 
   return {

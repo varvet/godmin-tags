@@ -29,6 +29,20 @@ Use the tags field in your form like so:
 <% end %>
 ```
 
+Or initialize yourself using JavaScript:
+
+```js
+Godmin.Tags.initializeTagger($el);
+```
+
+Additional options can be passed down to `Godmin.SelectBoxes`:
+
+```js
+Godmin.Tags.initializeTagger($el, {
+  create: false
+});
+```
+
 ## Contributors
 
 https://github.com/varvet/godmin-tags/graphs/contributors

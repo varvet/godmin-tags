@@ -22,8 +22,8 @@ Use the tags field in your form like so:
 
 ```erb
 <%= form_for(@resource) do |f| %>
-  <%= f.input_field :title %>
-  <%= f.text_field :body %>
+  <%= f.text_field :title %>
+  <%= f.text_area :body %>
 
   <%= f.tags_field :tags, data: { collection: Tag.all.pluck(:name) } %>
 <% end %>

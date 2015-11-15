@@ -2,7 +2,8 @@ module Godmin
   module Tags
     module Helper
       def tags_field(attribute, options = {})
-        text_field(attribute, options.deep_merge(data: { behavior: "tagger" }))
+        defaults = { value: object.send(attribute).to_s, data: { behavior: "tagger" } }
+        text_field(attribute, defaults.deep_merge(options))
       end
     end
   end
